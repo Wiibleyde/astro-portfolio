@@ -17,7 +17,7 @@ const menuitems = [
 		path: '/#contact',
 	},
 	{
-		title: 'Blog',
+		title: 'Blog (FR only)',
 		path: '/blog',
 	},
 ];
@@ -36,7 +36,7 @@ const menuitems = [
 			<ul class="flex flex-col lg:flex-row lg:gap-3">
 				{
 					menuitems.map((item) => (
-						<>
+						<div>
 							<li>
 								<a
 									aria-label="navigation link"
@@ -46,7 +46,7 @@ const menuitems = [
 									{item.title}
 								</a>
 							</li>
-						</>
+						</div>
 					))
 				}
 				<li><ToggleTheme /></li>
