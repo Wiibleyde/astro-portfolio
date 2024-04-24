@@ -18,7 +18,12 @@ const articles = await getCollection('articles', ({ data }) => {
 });
 
 const id: number = parseInt(Astro.url.href.split('/').pop() || '0');
-const article = articles[id - 1];
+let article:any;
+if (id === 0 || id > articles.length) {
+    article = articles[0];
+} else {
+    article = articles[id - 1];
+}
 
 ---
 
