@@ -33,7 +33,7 @@ if (id === 0 || id > articles.length) {
         Retour au blog
     </a>
 	<h2 class="font-monospace text-2xl text-blue lg:text-4xl">Article : {article.data.title}</h2>
-    <img src={article.data.img_src} alt={article.data.img_alt} class="w-64 h-64 rounded-lg my-5 border-blue border-8"></img>
+    <img src={article.data.img_src} alt={article.data.img_alt} class="w-64 h-64 rounded-lg my-5 border-blue border-8 dark:bg-transparent bg-black"></img>
 	<div class="flex flex-wrap align-baseline">
         <span class="font-monospace text-lg dark:text-blue text-black">
             <Fragment set:html={article.data.description}></Fragment>

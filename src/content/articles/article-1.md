@@ -1,9 +1,9 @@
 ---
 inProgress: false
 title: Réalisation de ce site 🚀 !
-description: "Je vous présente mon site web, réalisé avec Astro.js et TailwindCSS. Tout a été fait en TypeScript, et le résultat est sous vos yeux actuellement ! La découverte de astro.js a été une révélation pour moi, et je vous partage mon expérience dans cet article.<br>Astro.js est un framework qui permet de créer des sites web statiques, avec des composants réutilisables, et tout cela en TypeScript. Il m'a été recommandé par un intervenant qui a lui aussi découvert ce framework récemment. J'ai donc décidé de me lancer dans la création de ce site en total découverte et un petit peu à l'aveugle. J'ai été agréablement surpris par la simplicité de mise en place, et la rapidité d'exécution. J'ai pu créer ce site en moins de 2 jours, et je suis très satisfait du résultat.<br>Je vous invite à découvrir Astro.js, et à me donner votre avis sur ce site !"
+description: "Permettez-moi de vous présenter mon site web, façonné à l'aide d'Astro.js et TailwindCSS. Chaque élément a été soigneusement conçu en TypeScript, et vous avez le plaisir de le découvrir sous vos yeux à l'instant même ! Ma rencontre avec Astro.js a été une véritable révélation, que je me fais un plaisir de partager avec vous dans cet article.<br><br>Astro.js est un framework révolutionnaire permettant de créer des sites web statiques, offrant une panoplie de composants réutilisables, le tout propulsé par TypeScript. C'est grâce à la recommandation d'un intervenant qui venait lui-même de découvrir ce framework que j'ai décidé de me lancer dans cette aventure, un peu à l'aveuglette. J'ai été agréablement surpris par la simplicité de sa mise en place et la rapidité d'exécution. En moins de deux jours, j'ai pu donner vie à ce site qui me comble de satisfaction.<br><br>Je vous convie à explorer Astro.js et à me faire part de vos impressions sur ce site !"
 img_alt: astro-logo
 img_src: https://astro.js.org/astro.png
 link: /blog/1 # DON'T FORGET TO CHANGE THIS LINK
-tags: ['Astro.js', 'TailwindCSS', 'TypeScript']
+tags: ['Astro.js', 'Web', 'TypeScript', 'TailwindCSS', 'Portfolio']
 ---

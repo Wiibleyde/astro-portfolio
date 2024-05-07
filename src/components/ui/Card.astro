@@ -15,21 +15,10 @@ const { url = '#', alt = 'Project image', img = 'https://panel.hope-rp.com/stati
 ---
 
 <section class="w-full p-4 md:w-1/2 lg:w-1/3">
-	<article
-		data-testId="card"
-		class="rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
-	>
+	<article data-testId="card" class="rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl">
 		<a href={url} aria-label="link to project">
 			<div class="relative flex items-end overflow-hidden rounded-xl">
-				<Image
-					src={img}
-					alt={alt}
-					aspectRatio="4:4"
-					format="png"
-					width={400}
-					height=auto
-					loading="eager"
-				/>
+				<Image src={img} alt={alt} aspectRatio="4:4" format="png" width={400} height=auto loading="eager"/>
 			</div>
 			<div class="mt-1 p-2">
 				<h3 class="text-xl text-blue lg:text-2xl">{title}</h3>
