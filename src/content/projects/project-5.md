@@ -1,7 +1,7 @@
 ---
 inProgress: false
 title: Furutsu Game
-description: FurutsuGame is a 2D game written in CSharp using the Unity game engine (made for a school project).
+description: FurutsuGame est un jeu en 2D écrit en CSharp utilisant le moteur de jeu Unity (réalisé pour un projet scolaire).
 img_alt: furutsu-game
 img_src: /furutsu.png
 link: https://github.com/Wiibleyde/FurutsuGame

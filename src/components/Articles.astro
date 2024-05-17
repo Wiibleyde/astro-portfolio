@@ -31,7 +31,7 @@ function getBeginOfText(text, length) {
                 <a href={article.data.link} class="m-5 p-5 border-2 border-blue rounded-lg w-96 h-auto">
                     <div>
                         <p class="font-monospace text-xl dark:text-blue text-black">{article.data.title}</p>
-                        <img src={article.data.img_src} alt={article.data.img_alt} class="w-64 h-64 mx-auto" />
+                        <img src={article.data.img_src} alt={article.data.img_alt} class="w-64 h-64 mx-auto rounded-lg my-5 border-blue border-8 dark:bg-transparent bg-black" />
                         <span class="font-monospace text-lg dark:text-blue text-black">
                             <Fragment set:html={(getBeginOfText(article.data.description, 96) + '...')}></Fragment>
                         </span>

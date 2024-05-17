@@ -5,11 +5,11 @@ import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
 
 const menuitems = [
 	{
-		title: 'About',
+		title: 'A propos',
 		path: '/#about',
 	},
 	{
-		title: 'Projects',
+		title: 'Projets',
 		path: '/#projects',
 	},
 	{
@@ -17,7 +17,7 @@ const menuitems = [
 		path: '/#contact',
 	},
 	{
-		title: 'Blog (FR only)',
+		title: 'Blog',
 		path: '/blog',
 	},
 ];
@@ -26,8 +26,8 @@ const menuitems = [
 <header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
-			<Button size={'sm'} name="Download CV" id="cv-button" onclick="window.open('https://nathan.bonnell.fr/cv/', '_blank');">Download CV</Button>
-			<Button class={'ml-5'} size={'sm'} name="Download CV" id="cv-button" onclick="window.open('https://nathan.bonnell.fr/cv-long/', '_blank');">Download CV (long version)</Button>
+			<Button size={'sm'} name="Download CV" id="cv-button" onclick="window.open('https://nathan.bonnell.fr/cv/', '_blank');">CV</Button>
+			<Button class={'ml-5'} size={'sm'} name="Download CV" id="cv-button" onclick="window.open('https://nathan.bonnell.fr/cv-long/', '_blank');">CV (version longue)</Button>
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>

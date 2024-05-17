@@ -1,9 +1,9 @@
 ---
 inProgress: false
-title: GTA-RP server | Hope-RP (Code not public)
-description: Development of a GTA-RP server from scratch (using FiveM server base). With a web panel, custom VoIP system, desktop application and administration tools. Project still under development!
+title: Hope-GTARP (Code privé)
+description: Développement d'un serveur GTA-RP à partir de zéro (en utilisant la base de serveur FiveM). Avec un panneau web, un système VoIP personnalisé, une application de bureau et des outils d'administration. Projet encore en cours de développement !
 img_alt: hope-gta-rp
 img_src: /hope.png
 link: https://panel.hope-rp.com/
-tags: ['Typescript', 'Lua', 'Go', '.NET', 'C', 'TailwindCSS', 'JavaScript', 'MariaDB', 'InfluxDB']
+tags: ['TypeScript', 'Lua', 'Go', '.NET', 'C', 'TailwindCSS', 'JavaScript', 'MariaDB', 'InfluxDB']
 ---
