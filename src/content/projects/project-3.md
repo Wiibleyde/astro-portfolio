@@ -5,5 +5,5 @@ description: Fivem Cam Script est une ressource à ajouter à votre serveur Five
 img_alt: FiveM-Cam-Script
 img_src: /WeazelNews_Logo.webp
 link: https://github.com/Wiibleyde/Fivem-Cam-Script
-tags: ['Lua']
+tags: ['Lua', 'FiveM', 'GTA-RP']
 ---

@@ -1,6 +1,5 @@
 ---
 import { Image } from '@astrojs/image/components';
-import Button from '@components/ui/Button.astro';
 ---
 
 <section data-testid="hero" class="flex h-screen flex-col-reverse items-center justify-center text-center lg:flex-row">
@@ -10,11 +9,8 @@ import Button from '@components/ui/Button.astro';
 				Bonjour ! Je m'appelle <span class="text-blue">Nathan Bonnell</span> et je suis un étudiant (2ème année (qui passe en 3ème !)) en informatique basé sur Bordeaux (France).
 			</h1>
 		</div>
-		<!-- <div class="mb-10">
-			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more" onclick="window.open('https://nathan.bonnell.fr/cv/', '_blank');">En savoir plus</Button>
-		</div> -->
 	</div>
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
-		<Image src={"https://nathan.bonnell.fr/cv/src/pp.jpg"} alt="Nathan BONNELL" aspectRatio="4:4" format="png"width={600} height={600} loading="eager"/>
+		<Image src={"https://nathan.bonnell.fr/cv/src/pp.jpg"} class={'rounded-lg'} alt="Nathan BONNELL" aspectRatio="4:4" format="png"width={600} height={600} loading="eager"/>
 	</div>
 </section>

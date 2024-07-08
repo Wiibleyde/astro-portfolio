@@ -5,5 +5,5 @@ description: FurutsuGame est un jeu en 2D écrit en CSharp utilisant le moteur d
 img_alt: furutsu-game
 img_src: /furutsu.png
 link: https://github.com/Wiibleyde/FurutsuGame
-tags: ['.NET', 'Unity', 'Suika Game']
+tags: ['.NET', 'Unity', 'SuikaGame']
 ---
