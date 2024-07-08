@@ -35,7 +35,7 @@ function getBeginOfText(text, length) {
                         <span class="font-monospace text-lg dark:text-blue text-black">
                             <Fragment set:html={(getBeginOfText(article.data.description, 96) + '...')}></Fragment>
                         </span>
-                        <div class="flex flex-wrap justify-center">
+                        <div class="flex flex-wrap justify-center mt-3">
                             {
                                 article.data.tags.map((tag) => (
                                     <span class="font-monospace text-lg text-black mx-5 bg-blue p-1 rounded-lg">#{tag}</span>
