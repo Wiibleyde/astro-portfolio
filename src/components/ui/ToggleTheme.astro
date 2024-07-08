@@ -23,27 +23,44 @@
 </style>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function ready() {
-		const button = document.querySelector(
-			'.theme-switch input[type="checkbox"]'
-		) as HTMLInputElement;
+document.addEventListener('DOMContentLoaded', function ready() {
+    const button = document.querySelector('.theme-switch input[type="checkbox"]') as HTMLInputElement;
 
-		const switchTheme = () => {
-			document.documentElement.classList.toggle('dark');
-			if (document.documentElement.classList.contains('dark')) {
-				localStorage.setItem('theme', 'dark');
-			}
-		};
+    const isNightTime = () => {
+        const hour = new Date().getHours();
+        return hour < 6 || hour >= 18;
+    };
 
-		if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			switchTheme();
-		}
+    const switchTheme = (forceDark = false) => {
+        const shouldSwitchToDark = forceDark || document.documentElement.classList.contains('light');
+        if (shouldSwitchToDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    };
 
-		button.addEventListener('click', () => {
-			switchTheme();
-		});
-	});
+    const initializeTheme = () => {
+        const userPrefersDark = localStorage.theme === 'dark';
+        const userPrefersLight = localStorage.theme === 'light';
+        const osPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const shouldUseDarkMode = userPrefersDark || (!userPrefersLight && (osPrefersDark || isNightTime()));
+
+        if (shouldUseDarkMode) {
+            switchTheme(true);
+        } else {
+            switchTheme(false);
+        }
+    };
+
+    initializeTheme();
+
+    button.addEventListener('click', () => {
+        switchTheme();
+    });
+});
 </script>
